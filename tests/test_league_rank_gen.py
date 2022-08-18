@@ -9,7 +9,7 @@ class LeagueRankGenerationTest(TestCase):
     def test_sample(self):
 
         commands = [
-            "python3 main.py -f ./tests/test_data/input_1.txt"
+            "python3 -m main -f ./tests/test_data/input_1.txt"
         ]
         process = sb.Popen(commands,stderr=sb.PIPE,stdout=sb.PIPE,shell=True)
         output, _ = process.communicate()
@@ -22,7 +22,7 @@ class LeagueRankGenerationTest(TestCase):
     def test_epl_201819(self):
 
         commands = [
-            "python3 main.py -f ./tests/test_data/input_2.txt"
+            "python3 -m main -f ./tests/test_data/input_2.txt"
         ]
         process = sb.Popen(commands,stderr=sb.PIPE,stdout=sb.PIPE,shell=True)
         output, _ = process.communicate()

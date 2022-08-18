@@ -1,6 +1,5 @@
 import unittest
 from unittest import runner
-from unittest import suite
 
 
 if __name__ == "__main__":
